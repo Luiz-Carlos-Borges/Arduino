@@ -1,0 +1,30 @@
+// C++ code
+//
+int tempo = 1000;
+int led = 13;
+int led2 = 12;
+int led3 = 11;
+void setup()
+{
+  pinMode(led, OUTPUT);
+  pinMode(led2, OUTPUT);
+  pinMode(led3, OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(led, HIGH);
+  delay(tempo); // Wait for 1000 millisecond(s)
+  digitalWrite(led, LOW);
+  delay(tempo); // Wait for 1000 millisecond(s)
+  
+  digitalWrite(led2, HIGH);
+  delay(tempo/3); // Wait for 1000 millisecond(s)
+  digitalWrite(led2, LOW);
+  delay(tempo); // Wait for 1000 millisecond(s)
+  
+   digitalWrite(led3, HIGH);
+  delay(tempo); // Wait for 1000 millisecond(s)
+  digitalWrite(led3, LOW);
+  delay(tempo); // Wait for 1000 millisecond(s)
+}
